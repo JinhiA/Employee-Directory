@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="jumotron">
-        Staff Directory
+        Employee Directory
       </header>
       <Employee />
     </div>
