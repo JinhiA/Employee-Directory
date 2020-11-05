@@ -9,7 +9,7 @@ class Employee extends React.Component {
   };
   componentDidMount = () => {
     axios
-      .get("https://randomuser.me/api/?results=50&nat=us")
+      .get("https://randomuser.me/api/?results=100&nat=us")
       .then((records) => {
         let empdata = records.data.results;
         let employeeRecordstemp = [];
@@ -31,7 +31,6 @@ class Employee extends React.Component {
   render() {
     return (
       <div>
-        <h2>Employee Details</h2>
         <EmployeeData employees={this.state.employeeRecords} />>
       </div>
     );
