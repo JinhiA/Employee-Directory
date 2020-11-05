@@ -9,7 +9,7 @@ class Employee extends React.Component {
   };
   componentDidMount = () => {
     axios
-      .get("https://randomuser.me/api/?results=500&nat=us")
+      .get("https://randomuser.me/api/?results=50&nat=us")
       .then((records) => {
         let empdata = records.data.results;
         let employeeRecordstemp = [];
@@ -18,7 +18,6 @@ class Employee extends React.Component {
           let erecord = {
             name: empdata[i].name.first + " " + empdata[i].name.last,
             email: empdata[i].email,
-            image: empdata[i].picture.medium,
             phone: empdata[i].cell,
             dob: empdata[i].dob.date,
           };

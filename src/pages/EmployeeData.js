@@ -17,12 +17,6 @@ const EmployeeData = (props) => {
         width: 500,
       },
       {
-        label: "Image",
-        field: "image",
-        sort: "asc",
-        width: 500,
-      },
-      {
         label: "Phone",
         field: "phone",
         sort: "asc",
